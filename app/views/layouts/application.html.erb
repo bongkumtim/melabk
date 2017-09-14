@@ -3,12 +3,43 @@
   <head>
     <title>Melabk</title>
     <%= csrf_meta_tags %>
-
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="MeLAB" content="All in one platform for Food Business">
+    <meta name="MeLAB Global Sdn Bhd" content="Distribution of recipes, foods and ingredients ">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+      <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 py-4">
+            <h4 class="text-white">MeLAB Global Sdn Bhd</h4>
+            <p class="text-muted">Suite Mars, Startup Campus Building #3, 1st Floor 
+20, Pangyo-ro 289beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, Korea 13488
+Tel. +82 70 4221 2611 / Fax. +82 70 7786 1771</p>
+          </div>
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://www.facebook.com/Melab-2000584810177766/" target="_blank" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email : admin@melab.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a href="/welcome" class="navbar-brand">MeLAB For Business</a>
+        <a href="#" class="navbar-brand"><%= link_to 'New List', new_list_path %></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

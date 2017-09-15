@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'google-api-client', '~> 0.8.6'
+gem 'fog-google', '~> 0.5.5'
+gem 'mini_magick', '~> 4.8'
 gem 'carrierwave', '~> 1.1'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.beta'

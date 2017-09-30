@@ -38,14 +38,14 @@ Tel. +82 70 4221 2611 / Fax. +82 70 7786 1771</p>
  
   <%= link_to('Edit registration', edit_user_registration_path) %>
   <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
- 
+  <%= link_to 'Account', authenticated_root_path %>
 <% else %>
  
   <%= link_to('Register', new_user_registration_path)  %>
   <%= link_to('Login', new_user_session_path)  %>  
  
 <% end %>
-        <%= link_to 'Account', authenticated_root_path %>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

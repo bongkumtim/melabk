@@ -1,5 +1,6 @@
 class ListsController < ApplicationController
   before_action :set_list, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, :only => [:index, :welcome, :licensing, :show, :training]
 
   # GET /lists
   # GET /lists.json

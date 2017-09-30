@@ -1,4 +1,4 @@
-class ApplicationMailer < ActionMailer::Base
+class UserMailer < ApplicationMailer
   default from: 'admin@melab.biz'
   layout 'mailer'
 
@@ -7,6 +7,4 @@ class ApplicationMailer < ActionMailer::Base
     @user = user
     mail(:to => @user.email, :subject => "Welcome!")
   end
-
-
 end

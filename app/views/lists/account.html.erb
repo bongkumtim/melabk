@@ -13,7 +13,8 @@
             </li>
             <li class="nav-item">
             <% if current_user.email == 'mjbond_bong2@yahoo.com' %>        
-            <%= link_to('Listing', listing_path) %>
+            <li><%= link_to('Listing', listing_path) %></li>
+            <li><%= link_to 'New List', new_list_path %></li>
             <% end %>
             </li>
           </ul>

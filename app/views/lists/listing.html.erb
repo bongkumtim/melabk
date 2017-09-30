@@ -8,6 +8,7 @@
                   <%= image_tag (list.picture.url),:size=> '356x280', :class=> "img-responsive" if list.picture?  %>
                   <p class="card-text"><strong><%= list.title %></strong></p><p><%= list.description %> </p>
                   <p> Difficulty level <%= list.difficulty %> </p>
+                  <p class="card-text"><%= link_to 'Show', list %> | <%= link_to 'Edit', edit_list_path(list) %> | <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
                   <hr>
                   </br>
               </div>
@@ -15,4 +16,3 @@
         </div> 
       </div>
     </div>
-

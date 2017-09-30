@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+
 gem 'devise', '~> 4.3'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'google-api-client', '~> 0.8.6'

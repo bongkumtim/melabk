@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get '/welcome' => 'lists#welcome'
   get '/training' => 'lists#training'
   get '/licensing' => 'lists#licensing'
-
+  get '/listing' => 'lists#listing'
 end
